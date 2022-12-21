@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #eee;
+    padding: 15px;
+}
+
+.header {
+    padding: 10px;
+}
+
+.header__second {
+    padding: 10px 15px;
+    background-color: #fff;
+    margin: 5px 0px 0px;
+}
+
+.container__form {
+    margin: 4px 0;
+    background-color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}
+
+.addNewTaskText {
+    padding: 1px 15px;
+    background-color: white;
+}
+
+.newTask {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.task {
+    color: #333;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 15px;
+    padding: 5px;
+    align-items: center;
+    word-break: break-word;
+    font-size: 18px;
+    border-bottom: 5px solid #eee;
+}
+
+.task--done {
+    text-decoration: line-through;
+}
+
+.buttonAddTask {
+    background-color: #337c85;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+}
+
+.buttonDone {
+    font-size: 18px;
+    background-color: #1f913b;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.buttonRemove {
+    font-size: 18px;
+    color: white;
+    background-color: crimson;
+}
+
+.taskPlace__list {
+    background-color: white;
+    padding: 20px;
+    font-size: 18px;
+    margin: auto;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .container__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
