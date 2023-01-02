@@ -68,6 +68,10 @@ html {
     border: none;
 }
 
+.buttonAddTask:hover {
+    background-color:hsl(187, 45%, 41%);
+}
+
 .buttonDone {
     font-size: 18px;
     background-color: #1f913b;
@@ -76,10 +80,18 @@ html {
     height: 30px;
 }
 
+.buttonDone:hover {
+    background-color: hsl(135, 65%, 40%);
+}
+
 .buttonRemove {
     font-size: 18px;
     color: white;
-    background-color: crimson;
+    background-color: hsl(348, 83%, 47%);
+}
+
+.buttonRemove:hover {
+    background-color: hsl(348, 83%, 53%);
 }
 
 .taskPlace__list {
