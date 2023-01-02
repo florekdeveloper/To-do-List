@@ -40,7 +40,7 @@ html {
 }
 
 .newTask {
-    padding: 5px;
+    padding: 8px;
     font-size: 18px;
 }
 
@@ -61,37 +61,41 @@ html {
 }
 
 .buttonAddTask {
-    background-color: #337c85;
+    background-color: hsl(187, 45%, 36%);
     color: #fff;
     padding: 10px;
     font-size: 18px;
     border: none;
+    transition: 1s;
 }
 
 .buttonAddTask:hover {
-    background-color:hsl(187, 45%, 41%);
+    background-color: hsl(187, 45%, 42%);
+    transform: scale(1.1);
 }
 
 .buttonDone {
     font-size: 18px;
-    background-color: #1f913b;
+    background-color: hsl(135, 65%, 35%);
     color: white;
     width: 30px;
     height: 30px;
+    transition: 1s;
 }
 
 .buttonDone:hover {
-    background-color: hsl(135, 65%, 40%);
+    background-color: hsl(135, 65%, 45%);
 }
 
 .buttonRemove {
     font-size: 18px;
     color: white;
     background-color: hsl(348, 83%, 47%);
+    transition: 1s;
 }
 
 .buttonRemove:hover {
-    background-color: hsl(348, 83%, 53%);
+    background-color: hsl(348, 83%, 57%);
 }
 
 .taskPlace__list {
