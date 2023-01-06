@@ -2,7 +2,7 @@
 
 ## Welcome everyone in my "To do list", simple application for scheduling tasks
 
-![marcin](/images/Animation.gif)
+![marcin](/images/Animation2.gif)
 
 ## Demo
 https://florekdeveloper.github.io/To-do-list/
