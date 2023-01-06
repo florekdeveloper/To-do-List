@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     background-color: #eee;
+    font-family: 'Lato' sans-serif;
 }
 
 *, ::before, ::after {
@@ -8,70 +9,52 @@ html {
 }
 
 .body {
-    font-family: 'Lato', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    background: #eee;
-    padding: 15px;
-}
-
-.header {
-    padding: 10px;
-}
-
-.header__second {
-    padding: 10px 15px;
-    background-color: #fff;
-    margin: 5px 0px 0px;
-}
-
-.container__form {
-    margin: 4px 0;
-    background-color: white;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 15px;
-}
-
-.addNewTaskText {
-    padding: 1px 15px;
-    background-color: white;
-}
-
-.newTask {
-    padding: 8px;
-    font-size: 18px;
-}
-
-.task {
-    color: #333;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 15px;
-    padding: 5px;
-    align-items: center;
-    word-break: break-word;
-    font-size: 18px;
-    border-bottom: 5px solid #eee;
-}
-
-.task--done {
-    text-decoration: line-through;
-}
-
-.taskPlace__list {
-    background-color: white;
-    padding: 20px;
-    font-size: 18px;
+    background-color: #eee;
     margin: auto;
-    list-style: none;
+    color: #292929;
+    max-width: 700px;
 }
 
 @media (max-width: 767px) {
-    .container__form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
+    .body {
+        max-width: 90%;
     }
+}
+
+.header {
+    color: #3c3c3c;
+    padding: 15px 0;
+
+}
+
+.firstSubHeader {
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+    color: #3c3c3c;
+    margin: 0;
+    padding: 20px; 
+}
+
+.section__header {
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.subHeader {
+    font-size: 25px;
+    color: #3c3c3c;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 0;
+    box-shadow: 0 0 5px #ddd;
 }

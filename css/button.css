@@ -1,37 +1,128 @@
-.buttonAddTask {
-    background-color: hsl(187, 45%, 36%);
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    transition: 1s;
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.buttonAddTask:hover {
-    background-color: hsl(187, 45%, 42%);
+.buttons__button {
+    background: transparent;
+    color: #008080;
+    border: none;
+    margin: 0 0 0 20px;
+    transition: color 0.3s;
+}
+
+.buttons__button:hover {
+    color: #008080dd;
+}
+
+.buttons__button:disabled {
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.form {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__button {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #008080;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__button:active {
+    outline: auto;
+}
+
+.form__button:hover {
+    background-color: #008080dd;
     transform: scale(1.1);
 }
 
-.buttonDone {
-    font-size: 18px;
-    background-color: hsl(135, 65%, 35%);
-    color: white;
+.list {
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    font-size: larger;
+}
+
+.list__item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.list__item--hidden {
+    display: none;
+}
+
+.form__input:focus {
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.form__input {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.list__item--lineThrough {
+    text-decoration-line: line-through;
+}
+
+.button__done {
+    color: #ffffff;
+    background-color: #008000;
+    margin: 5px;
+    padding: 0px;
     width: 30px;
     height: 30px;
-    transition: 1s;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.buttonDone:hover {
-    background-color: hsl(135, 65%, 45%);
+.button__done:hover {
+    background-color: #008000a8;
 }
 
-.buttonRemove {
-    font-size: 18px;
-    color: white;
-    background-color: hsl(348, 83%, 47%);
-    transition: 1s;
+.button__remove {
+    color: #ffffff;
+    background-color: #ff0000;
+    margin: 5px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.buttonRemove:hover {
-    background-color: hsl(348, 83%, 57%);
+.button__remove:hover {
+    background-color: #ff0000a8;
 }
